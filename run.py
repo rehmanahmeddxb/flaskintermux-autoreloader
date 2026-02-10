@@ -26,7 +26,7 @@ def log(msg):
 # ---------- STUCK PROCESS SCANNER ----------
 def scan_and_kill_stuck(port=FLASK_PORT):
     log(f"Scanning for stuck processes on port {port}...")
-    spinner = ['|', '/', '-', '\']
+    spinner = ['|', '/', '-', '\\']
     for i in range(6):  # animate scanning
         sys.stdout.write(f"\rScanning {spinner[i % len(spinner)]} ")
         sys.stdout.flush()
